@@ -9,9 +9,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Render the index page."""
+    """ Render the index page. """
     return render_template('0-index.html')
 
-    if __name__ == '__main__':
-        app.run(host='0.0.0.0', port=5000)
-
+if _name_ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
